@@ -1,0 +1,587 @@
+@font-face {
+    font-family: anant;
+    src: url(font/Maler.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    /* background-color: rgb(0, 0, 0); */
+
+
+}
+
+/* nav bar ki khubsurti  */
+.nav {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 70vh;
+    align-items: center;
+    /* background-color:orange; */
+
+    z-index: 99999;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+
+
+
+
+}
+
+.logo {
+    width: 10vh;
+    height: 10vh;
+    /* background-color: green; */
+    font-family: anant;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.nav-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: salmon; */
+
+}
+
+h4 {
+    font-family: anant;
+
+
+}
+
+h4>a {
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: lighter;
+    -webkit-user-select: none;
+
+}
+
+/* home page ka animation yaha se  */
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    background-color: aqua;
+
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px soid white;
+}
+
+.section1 {
+    background-color: #A6A999;
+    border: 2px solid #A6A999;
+
+}
+
+.section1 .left {
+    /* background-color: red; */
+    width: 40%;
+    height: 66%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4vw;
+    font-family: anant;
+    color: white;
+    cursor: pointer;
+    -webkit-user-select: none;
+    position: relative;
+}
+
+.no {
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    bottom: -42px;
+    left: 0;
+}
+
+.no img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.no1 {
+    scale: 2.4;
+    bottom: -20vh;
+    left: 17vw;
+}
+
+.no2 {
+    bottom: -20vh;
+    left: 0vw;
+}
+
+.no3 {
+    bottom: -20vh;
+    left: 60vw;
+}
+
+.no4 {
+    bottom: -18vh;
+    left: 80vw;
+}
+
+.section1 .right {
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+    /* background-color: greenyellow; */
+}
+
+.section2 {
+    background-color: #838965bf;
+}
+
+
+
+.second {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(126, 162, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    position: relative;
+}
+
+.svid {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+
+
+
+}
+
+.svid>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.op{
+    opacity: 1;
+}
+
+.vid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    opacity: .4;
+
+    /* transition: opacity 0.5s ease; */
+}
+
+.vid>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sec-home-text {
+    /* background-color: green; */
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    -webkit-user-select: none;
+
+}
+
+.sec-home-text>h1 {
+    font-size: 8vw;
+    font-family: anant;
+
+
+}
+
+.sec-home-text .h1 {
+    font-size: 10vw;
+    font-family: anant;
+
+
+}
+
+.sec-home-text .h2 {
+    font-size: 8vw;
+    font-family: anant;
+
+
+}
+
+.sec-home-text .h3 {
+
+    font-size: 6vw;
+
+}
+
+.sec-home-image>img {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+
+
+
+
+
+
+
+.third {
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+    overflow: ;
+}
+
+.third-box-1 {
+    width: 100%;
+    height: 100%;
+    background-color: #7EA2A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12vh;
+    font-family: anant;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-1 {
+    width: 20vw;
+    height: 20vw;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+
+
+}
+
+.circle-1>h1 {}
+
+.circle-2 {
+    width: 20vw;
+    height: 20vw;
+    background-color: rgb(255, 183, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 22%;
+    right: 5%;
+
+}
+
+.circle-2>h1 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+
+}
+
+.circle-2-box {
+    background-color: rgb(243, 228, 191);
+    width: 50vw;
+    height: 100vh;
+    opacity: 0;
+    overflow: hidden;
+
+}
+
+.circle-2-box>h1 {
+    z-index: 99999;
+
+}
+
+.circle-2-box-1 {
+    width: 50%;
+    height: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.me-1-image {
+    margin-top: 4vh;
+    /* background-color: red; */
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.me-1-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.me-1-name {
+    border-bottom: 1px solid black;
+}
+
+.me-1-name>h4 {
+    font-size: 1.5vh;
+    font-family: 'roboto', sans-serif;
+    text-transform: capitalize;
+
+}
+
+.link {
+    width: 4vw;
+    height: 4vh;
+    /* background-color: grey; */
+
+
+}
+
+.link a {
+    width: 50%;
+    height: 100%;
+
+    /* background-color: blanchedalmond; */
+}
+
+.link a img {
+    width: 2vw;
+    height: 2.5vh;
+    object-fit: cover;
+}
+
+.link .insta {
+    margin-top: -17px;
+    width: 1vw;
+    height: 2vh;
+}
+
+.circle-2-box-2 {
+    width: 50%;
+    height: 50%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    background: linear-gradient(to top, rgb(255, 182, 193), rgb(255, 182, 193));
+    width: 100vw;
+    height: 100vh;
+}
+
+.foot-1 {
+    width: 100vw;
+    height: 94vh;
+    /* background-color: rgb(237, 203, 203); */
+    display: flex;
+}
+
+.foot-b-1 {
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.thanks {
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    text-align: start;
+    align-items: center;
+    display: flex;
+    font-family: anant;
+}
+
+.thanks>h2 {
+    font-size: 4vw;
+    margin-left: 8px;
+}
+
+.h {
+    font-size: 8vw
+}
+
+
+.video {
+
+    width: 34vw;
+    height: 37vh;
+    /* background-color: yellow; */
+    box-shadow: 1px 1px 8px 4px black;
+}
+
+.video>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foot-b-2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.foot-2 {
+    width: 100vw;
+    height: 6vh;
+    background-color: transparent;
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.connect {
+    border-bottom: 1px solid white;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 40%;
+
+    align-items: end;
+    justify-content: start;
+    display: flex;
+
+
+}
+
+.connect>h1 {
+    font-size: 4vw;
+    font-family: anant;
+}
+
+.gmail {
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(78, 203, 6); */
+    border-bottom: 1px solid white;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: end;
+}
+.mail{
+    display: flex;
+}
+
+.gmail p{
+    font-family: sans-serif, "roboto";
+    font-size: 3vw;
+    text-transform: uppercase;
+
+
+}
+.one{
+    color: white;
+    width: 25%;
+    height: 100%;
+    justify-content: start;
+    /* background-color: green; */
+}
+.two{
+    /* background-color: red; */
+    width: 75%;
+    height: 100%;
+    
+}
+.two p{
+    text-transform: lowercase;
+    font-style: italic;
+    opacity: .6;
+    font-size: 4vh;
+}
+
+.gm {
+    font-size: 1.5vw;
+    text-transform: lowercase;
+    text-align: center;
+    background-color: red;
+    margin: 12vw 1vw;
+}
+
+
+.likendin {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid white;
+    /* background-color: rgb(255, 127, 229); */
+}
+
+.instagram {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid white;
+    /* background-color: rgb(255, 0, 0); */
+
+}
+
+.telegram {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid white;
+    /* background-color: rgb(110, 87, 87); */
+
+}
+
+.tele {
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: anant;
+    color: white;
+
+}
