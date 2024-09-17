@@ -8,7 +8,7 @@ function firstpage(){
 
     const page =document.querySelector('.start');
    setTimeout(() => {
-    page.style.transition = 'height 0.002s ease-out, opacity 0.2s ease-out';
+    page.style.transition = 'height 0.0002s ease-out, opacity 0.2s ease-out';
     page.style.transition = `${loadTime}ms ` ;
     page.style.height = '0%';
     page.style.opacity = '0';
