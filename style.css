@@ -111,7 +111,7 @@ h4>a {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    background-color: aqua;
+    /* background-color: aqua; */
 
 }
 
@@ -127,7 +127,7 @@ h4>a {
 
 .section1 {
     background-color: #A6A999;
-    border: 2px solid #A6A999;
+    /* border: 2px solid #A6A999; */
 
 }
 

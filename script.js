@@ -100,25 +100,51 @@ shape();
 
 
 
-function horizontal(){
-  gsap.registerPlugin(ScrollTrigger);
-const tl=gsap.timeline();
-tl.to(".wrapper",5,{
-  x:-window.innerWidth
-})
 
-ScrollTrigger.create({
-  animation:tl,
-  trigger:".wrapper",
-  start:"center center center",
-  end:"+=1000 ",
-  scrub:true,
-  pin:true,
-  // markers: true
-  });
+function horizontal() {
+  // Check if the screen width is greater than 768px (typical breakpoint for desktop)
+  if (window.innerWidth > 768) {
+    gsap.registerPlugin(ScrollTrigger);
+    const tl = gsap.timeline();
+    // This line creates a GSAP animation that moves the ".wrapper" element
+    // horizontally over a duration of 5 seconds. The '5' represents the duration in seconds.
+    tl.to(".wrapper", 5, {
+      x: -window.innerWidth
+    })
 
+    ScrollTrigger.create({
+      // This code configures a ScrollTrigger for a horizontal scrolling animation
+      animation: tl, // Links the timeline animation to this ScrollTrigger
+      trigger: ".wrapper", // Element that triggers the animation
+      start: "center center center", // Animation starts when the trigger element's center reaches the viewport's center
+      end: "+=1000 ", // Animation ends 1000 pixels after the start point
+      scrub: true, // Enables smooth scrolling animation tied to scroll position
+      pin: true, // Pins the trigger element during the animation
+      // markers: true // Uncomment to show visual markers for debugging
+    });
+  } else {
+    // Clear any existing ScrollTrigger instances for .wrapper
+    ScrollTrigger.getAll().forEach(instance => {
+      if (instance.vars.trigger === ".wrapper") {
+        instance.kill();
+      }
+    });
+    
+    // Reset the wrapper position
+    gsap.set(".wrapper", { x: 0 });
+    
+    // Hide section 2
+    gsap.set(".second", { display: "block" });
+  }
 }
+
+// Call the function initially
 horizontal();
+
+// Add event listener to check on window resize
+window.addEventListener('resize', horizontal);
+
+
  
 function shery(){
   Shery.textAnimate(".do" /* Element to target.*/, {
