@@ -2,19 +2,15 @@ function firstpage(){
   const loadstart= performance.now();
   window.onload = function(){
     const loadend=performance.now();
-    const loadTime=6000;
-    // const loadTime=loadend-loadstart;
+    const loadTime=loadend-loadstart;
     console.log("Page loaded in "+loadTime+" milliseconds");
 
     const page =document.querySelector('.start');
-   setTimeout(() => {
     page.style.transition = 'height 0.0002s ease-out, opacity 0.2s ease-out';
-    page.style.transition = `${loadTime}ms ` ;
+    page.style.transitionDuration = `${loadTime}ms`;
     page.style.height = '0%';
     page.style.opacity = '0';
-   }, 6000);
   }
-
 }
 firstpage();
 

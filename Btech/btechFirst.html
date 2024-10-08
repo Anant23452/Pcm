@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Btech first year</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100vw;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background-color: aqua;
+        }
+        .nav {
+    height: 12vh;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 70vh;
+    align-items: center;
+    text-align: center;
+    /* background-color:orange; */
+    overflow: hidden;
+
+    z-index: 99999;
+    /* position: fixed; */
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+
+
+
+
+}
+
+.logo {
+    width: 12vh;
+    height: 12vh;
+    /* background-color: green; */
+    font-family: anant;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.nav-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: salmon; */
+
+}
+
+h4 {
+    font-family: 'roboto',sans-serif;
+
+
+}
+
+h4>a {
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: lighter;
+    -webkit-user-select: none;
+
+}
+    .body{
+        box-sizing: border-box;
+    }
+        .first-year{
+    background-color: rgb(249, 255, 127);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+}
+.first-year-h1{
+    background-color: rgb(255, 0, 225);
+    text-align: center;
+    font-family: 'roboto',sans-serif;
+    height: 25vh;
+    font-size: 6vh;
+}
+.sum-img{
+
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 20px; /* Gap between images */
+  animation: scroll 15s linear infinite;
+}
+
+.marquee-content img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+           <a href="../index.html"> PCM</a>
+        </div>
+        <div class="nav-left">
+            <h4><a href="../index.html">Home</a></h4>
+            <h4><a href="ap.html">Test ⮟</a></h4>
+            <h4><a href="../chat.html">Chat</a></h4>
+            <h4><a href="../test.html">Quiz ⮟</a></h4>
+            <h4><a href="">Buy/Sell</a></h4>
+            <h4><a href="#footer">Contact</a></h4>
+            <h4><a href="../login.html">Login</a></h4>
+        </div>
+    </div>
+    
+    <div class="first-year">
+        <div class="first-year-h1">
+           <h1>
+            Btech 1st year Study material
+           </h1>
+           <div class="sub-img">
+            <div class="marquee">
+                <div class="marquee-content">
+                  <img src="image1.jpg" alt="Image 1">
+                  <img src="image2.jpg" alt="Image 2">
+                  <img src="image3.jpg" alt="Image 3">
+                  <img src="image4.jpg" alt="Image 4">
+                  <img src="image5.jpg" alt="Image 5">
+                  <img src="image6.jpg" alt="Image 6">
+                </div>
+              </div>
+          
+
+
+           </div>
+          
+        </div>
+      </div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; background-color: red;"></div>
+<div class="full-screen" id="blue-screen" style="height: 100vh; width: 100%; background-color: blue;"></div>
+<div class="full-screen" id="green-screen" style="height: 100vh; width: 100%; background-color: green;"></div>
+<div class="full-screen" id="yellow-screen" style="height: 100vh; width: 100%; background-color: yellow;"></div>
+<div class="full-screen" id="purple-screen" style="height: 100vh; width: 100%; background-color: purple;"></div>
+</body>
+</html>

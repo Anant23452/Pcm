@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(137, 250, 250);
+}
+.main{
+   
+}
+.nav{
+    position: fixed;
+   
+    
+}
+.hero-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+.section{
+    display: flex;
+    border: 1px solid white;
+
+}
+.section{
+    background-color: aquamarine;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font-family: 'roboto',sans-serif;
+      }
+}
+.section .img{
+    width: 40vh;
+    height: 40vh;
+    background-color: rgb(167, 132, 132);
+    border-radius: 7vh;
+ 
+}
+
+@media only screen and (max-width: 768px) {
+  .nav{
+    position: relative;
+  }
+    .hero-section {
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+        gap: 0px  !important;
+    }
+.section{
+    width: 90vw !important;
+    height: 20vh !important;
+}
+
+}
+
