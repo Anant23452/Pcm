@@ -205,7 +205,7 @@ h4>a {
     justify-content: center;
     -webkit-user-select: none;
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 .svid {
@@ -298,7 +298,7 @@ h4>a {
     background-color: brown;
     width: 100vw;
     height: 100vh;
-    display: none;
+    /* display: none; */
 }
 
 .third-box-1 {
@@ -436,7 +436,7 @@ h4>a {
     background: linear-gradient(to top, rgb(255, 182, 193), rgb(255, 182, 193));
     width: 100vw;
     height: 100vh;
-    display: none;
+    /* display: none; */
 }
 
 .foot-1 {
@@ -610,4 +610,5 @@ h4>a {
     width: 100vw;
     height: 100vh;
     background-color: green;
+    display: none;
 }

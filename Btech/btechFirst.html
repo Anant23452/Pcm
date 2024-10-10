@@ -1,18 +1,28 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+   <link rel="stylesheet" href="style.css">
     <title>Btech first year</title>
     <style>
+      @font-face {
+    font-family: anant;
+    src: url(font/Maler.ttf);
+}
+@font-face {
+  font-family: ap;
+  src: url(/font/Pribambas-Regular.woff2);
+}
         body {
             height: 100%;
             width: 100vw;
             box-sizing: border-box;
             padding: 0;
             margin: 0;
-            background-color: aqua;
+            background-color: #79AA48;
         }
         .nav {
     height: 12vh;
@@ -50,6 +60,16 @@
     font-size: 3vw;
     color: rgb(0, 0, 0);
     cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+    a{
+      text-decoration: none;
+    background: linear-gradient(to right, #ff9d00, #57ea0d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 1px solid salmon;
+    }
 }
 
 .nav-left {
@@ -79,7 +99,7 @@ h4>a {
         box-sizing: border-box;
     }
         .first-year{
-    background-color: rgb(249, 255, 127);
+    /* background-color: rgb(249, 255, 127); */
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -88,9 +108,10 @@ h4>a {
     display: flex;
 }
 .first-year-h1{
-    background-color: rgb(255, 0, 225);
+
+    background-color: #81ac56;
     text-align: center;
-    font-family: 'roboto',sans-serif;
+    font-family: ap;
     height: 25vh;
     font-size: 6vh;
 }
@@ -100,30 +121,351 @@ h4>a {
 .marquee {
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .marquee-content {
   display: flex;
   gap: 20px; /* Gap between images */
-  animation: scroll 15s linear infinite;
+  animation: scroll 34s linear infinite;
+  transition: all 2s ease-in-out;
 }
 
 .marquee-content img {
-  width: 200px;
-  height: 150px;
+  width: 30vw;
+  height: 55vh;
   object-fit: cover;
   border-radius: 10px;
 }
+.marquee-content:hover {
+  animation-play-state: paused !important;
+}
+.footer {
+    background: linear-gradient(to top,#79AA48, #7dae4d);
+    width: 100vw;
+    height: 100vh;
+    /* display: none; */
+}
+
+.foot-1 {
+    width: 100vw;
+    height: 94vh;
+    /* background-color: rgb(237, 203, 203); */
+    display: flex;
+}
+
+.foot-b-1 {
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.thanks {
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    text-align: start;
+    align-items: center;
+    display: flex;
+    font-family: ap;
+}
+
+.thanks>h2 {
+    font-size: 4vw;
+    margin-left: 8px;
+}
+
+.h {
+    font-size: 8vw
+}
+
+
+.video {
+
+    width: 34vw;
+    height: 37vh;
+    /* background-color: yellow; */
+    box-shadow: 1px 1px 8px 4px black;
+}
+
+.video>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foot-b-2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.foot-2 {
+    width: 100vw;
+    height: 6vh;
+    background-color: transparent;
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.connect {
+    border-bottom: 1px solid white;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 40%;
+
+    align-items: end;
+    justify-content: start;
+    display: flex;
+
+
+}
+
+.connect>h1 {
+    font-size: 4vw;
+    font-family: ap;
+}
+
+.gmail {
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(78, 203, 6); */
+    border-bottom: 1px solid white;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: end;
+}
+.mail{
+    display: flex;
+}
+
+.gmail p{
+    font-family: sans-serif, "roboto";
+    font-size: 3vw;
+    text-transform: uppercase;
+
+
+}
+.one{
+    color: white;
+    width: 25%;
+    height: 100%;
+    justify-content: start;
+    /* background-color: green; */
+}
+.two{
+    /* background-color: red; */
+    width: 75%;
+    height: 100%;
+    
+}
+.two p{
+    text-transform: lowercase;
+    font-style: italic;
+    opacity: .6;
+    font-size: 4vh;
+}
+
+.gm {
+    font-size: 1.5vw;
+    text-transform: lowercase;
+    text-align: center;
+    background-color: red;
+    margin: 12vw 1vw;
+}
+
+
+.likendin {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid white;
+    /* background-color: rgb(255, 127, 229); */
+}
+
+.instagram {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid white;
+    /* background-color: rgb(255, 0, 0); */
+
+}
+
+.telegram {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid white;
+    /* background-color: rgb(110, 87, 87); */
+
+}
+
+.tele {
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: ap;
+    color: white;
+
+}
+
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(30%);
   }
+
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-20%);
   }
 }
+.sub{
+  width: 100vw;
+  height: 25vh;
+  border-top: none;
+  border: 1px solid rgba(81, 110, 78, 0.662);
+  display: flex;
+  align-items: center;
+  
+}
+.name{
+  font-family: 'roboto',sans-serif;
+  font-size: 4vw;
+  justify-content: start;
+}
+.name h1{
+  border-radius: 5vh;
+  font-family: anant;
+}
+.full-screenf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.subject-img{
+  width: 20vw;
+  height: 100%;
+  cursor: pointer;
+}
+.subject-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 1s ease-in-out;
+}
+.subject-img img:hover{
+  scale: 1.1;
+  transform: rotate(10deg);
+  
+}
+.subject-img img:hover + .para{
+  color: red !important;
+  
+}
+.m2{
+  display: none;
+}
+
+
+.text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: ap;
+}
+@media only screen and (max-width: 600px) {
+  .name h1 {
+    font-size: 16vw;
+  }
+
+  .first-year-h1 {
+  
+  font-size: 4vh;
+}
+.marquee-content img {
+  width: 63vw;
+  height: 38vh;
+  
+}
+.nav {
+  height: 7vh;
+ 
+  /* background-color: orange !important; */
+ 
+}
+.nav-left{
+  width: 90%;
+}
+.logo{
+  display: none;
+}
+.first-year {
+ 
+  height: 51vh;
+
+}
+.m1{
+  display: none;
+}
+.m2{
+  display: block;
+}
+.foot-1{
+    flex-direction: column;
+}
+.foot-b-1 {
+    width: 101%;
+   
+    gap: 1vh;
+  }
+  .thanks > h2 {
+    font-size: 9vw;
+    margin-left: 4px;
+  }
+  .video {
+    width: 90vw;
+    height: 27vh;
+   
+  }
+  .foot-b-2 {
+    width: 100%;
+   
+  }
+  .connect{
+    align-items: center;
+    h1{
+        font-size: 4vh;
+    }
+  }
+  .foot-2 {
+   
+    height: 10vh;
+  
+    font-size: 2vw;
+   
+  }  
+  .one {
+  
+    height: 104%;
+    
+  }
+  .two {
+    height: 90%;
+  }
+  .two p {
+    font-size: 2vh;
+  }
+}
+
+
 
     </style>
 </head>
@@ -145,18 +487,19 @@ h4>a {
     
     <div class="first-year">
         <div class="first-year-h1">
-           <h1>
-            Btech 1st year Study material
+           <h1 class="m1">
+            B.Tech 1st year Study material
            </h1>
+           <h1 class="m2">B.tech  1st year</h1>
            <div class="sub-img">
             <div class="marquee">
                 <div class="marquee-content">
-                  <img src="image1.jpg" alt="Image 1">
-                  <img src="image2.jpg" alt="Image 2">
-                  <img src="image3.jpg" alt="Image 3">
-                  <img src="image4.jpg" alt="Image 4">
-                  <img src="image5.jpg" alt="Image 5">
-                  <img src="image6.jpg" alt="Image 6">
+                  <img src="https://www.shutterstock.com/image-vector/physics-chalkboard-background-hand-drawn-600w-1988419205.jpg" alt="Image 1">
+                  <img src="https://i.pinimg.com/736x/00/ba/8e/00ba8e11517dffc64541bdc10505bbe0.jpg" alt="Image 2">
+                  <img src="https://smartlab.com.sg/Tuition/wp-content/uploads/2024/03/OIG3-8.jpeg" alt="Image 3">
+                  <img src="https://media.istockphoto.com/id/1341328946/photo/concept-of-soft-skills-mind-map-in-handwritten-style.jpg?s=612x612&w=0&k=20&c=36mLiKknI-E_4gCUWOC36eCExaqOPj8xkDpA2CQ7CL4=" alt="Image 4">
+                  <img src="https://media.licdn.com/dms/image/D5612AQEO2QFsluSvdg/article-cover_image-shrink_720_1280/0/1678680187327?e=2147483647&v=beta&t=x_CAMtSB7ib9Za94ZVAr9_juVYYv3uNEP5nnhTKSsY8" alt="Image 5">
+                  <img src="https://media.istockphoto.com/id/615714450/vector/laptop-with-c-letter-learn-c-programming-language-flat-design.jpg?s=612x612&w=0&k=20&c=NS544KudDbwCLmP7-EUGzd7Oz-TBwcobhH34lCH56kk=" alt="Image 6">
                 </div>
               </div>
           
@@ -166,10 +509,1340 @@ h4>a {
           
         </div>
       </div>
-<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; background-color: red;"></div>
-<div class="full-screen" id="blue-screen" style="height: 100vh; width: 100%; background-color: blue;"></div>
-<div class="full-screen" id="green-screen" style="height: 100vh; width: 100%; background-color: green;"></div>
-<div class="full-screen" id="yellow-screen" style="height: 100vh; width: 100%; background-color: yellow;"></div>
-<div class="full-screen" id="purple-screen" style="height: 100vh; width: 100%; background-color: purple;"></div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color:#E5FF7F;">Physics</h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p>unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color: rgb(229, 255, 127);">Chemistry</h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p>unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color: #E5FF7F;">Maths-1st</h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p class="para">unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color: #E5FF7F">Soft-skills </h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p>unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color: #E5FF7F;">Mechanics</h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p>unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color:#E5FF7F;">PPS</h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p>unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="full-screen" id="red-screen" style="height: 100vh; width: 100%; ">
+
+  <div class="sub name">
+    <h1 style="background-color: #E5FF7F;">Environment & Ecology</h1>
+  </div>
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%;">
+    <p>unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%;">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-1</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%;">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-2</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-3</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-4</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Hand-unit-5</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  <div class="sub">
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Quntum</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>PYQ</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Imp Qustion</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; ">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>CT-paper</p>
+  </div>
+  </div>
+  <div class="full-screenf" style="height: 25vh; width: 100%; ">
+  <div style="height: 20vh; width: 100%; background-color:">
+    <div class="subject-img">
+ <img src="https://cdn.pixabay.com/photo/2020/10/16/05/41/student-5658577_1280.png" alt="physics">
+    </div>
+  </div>
+
+  <div class="text" style="height: 5vh; width: 100%; ">
+    <p>Semester-paper</p>
+  </div>
+  </div>
+ 
+  </div>
+  
+  
+</div>
+<div class="footer" id="footer">
+  <div class="foot-1">
+      <div class="foot-b-1">
+          <div class="thanks">
+              <h2><span class="h">H</span>ave you learn Anything today ?</h2>
+          </div>
+          <div class="video">
+              <img src="/image/674163.gif" alt="image">
+          </div>
+      </div>
+      <div class="foot-b-2">
+          <div class="connect">
+              <h1>Connect with us</h1>
+          </div>
+          <div class="gmail mail">
+              <div class="one flex">
+                  <p>Gmail-</p>
+              </div>
+              <div class="two flex">
+                  <p>imagine231216@gmail.com</p>
+              </div>
+          </div>
+          <div class="likendin gmail">
+              <a class="tele" href="">
+                  <p>Likendin</p>
+              </a>
+          </div>
+          <div class="instagram gmail">
+              <a class="tele" href="">
+                  <p>Instagram</p>
+              </a>
+          </div>
+          <div class="telegram gmail">
+              <a class="tele" href="">
+                  <p>Telegram</p>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="foot-2">
+      <p> <b>
+              �� 2024 PCM. All rights reserved.
+          </b></p>
+  </div>
+
+</div>
+
 </body>
 </html>
