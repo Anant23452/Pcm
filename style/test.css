@@ -1,3 +1,11 @@
+@font-face {
+  font-family: beni;
+  src: url(/font/BeniBlack.ttf);
+}
+@font-face {
+  font-family: pri;
+  src: url(/font/Pribambas-Regular.woff2);
+}
 body{
     background: linear-gradient(to right, #ff7e5f, #feb47b);
 
@@ -24,6 +32,13 @@ body{
     /* border: 1px solid rgba(255, 255, 255, 0.589); */
 
 }
+.m1{
+  background-color: red !important;
+}
+.first-class-h1{
+  margin-top: 8vh;
+  font-family: pri;
+}
 .section{
     /* background-color: aquamarine; */
     display: flex;
@@ -31,8 +46,10 @@ body{
     justify-content: center;
     flex-direction: column;
     h1{
-        font-family: 'roboto',sans-serif;
+        font-family: pri;
         text-decoration: none;
+        letter-spacing: 1vh;
+        
       }
       a{
         text-decoration: none;
@@ -55,6 +72,17 @@ body{
 }
 .section .img img:hover{
     scale: 1.2;
+}
+.student-pro{
+  width: 100vw;
+  height: 200vh;
+  background-color: rgba(0, 0, 255, 0.34);
+  h1{
+    font-size: 6vw;
+    font-family: pri;
+    letter-spacing: 2vh;
+    font-weight: bolder;
+  }
 }
 .footer{
     background: linear-gradient(to right, #ff7e5f, #feb47b);
