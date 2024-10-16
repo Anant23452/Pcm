@@ -90,6 +90,20 @@
     
     font-family: Arial, Helvetica, sans-serif;
 }
+.buy-button{
+  width: 15vh;
+  height: 5vh;
+  font-weight: 400;
+ 
+  box-shadow: 3px 4px 30px rgba(0, 0, 0, 0.1); 
+  -webkit-backdrop-filter: blur(10px); 
+ 
+  border: none;
+  a{
+    text-decoration: none;
+  }
+
+}
 .buy-product-sec{
     /* background-color: red; */
     
@@ -158,6 +172,7 @@
 /* background-color: red; */
 height: 300vh;
   }
+
   .rich{
     
   }

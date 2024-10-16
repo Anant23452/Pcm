@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: anant;
     src: url(font/Maler.ttf);
@@ -6,7 +13,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body,
@@ -17,9 +25,15 @@ html {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .start{
     pointer-events: none;
@@ -29,14 +43,18 @@ html {
     z-index: 9999999;
     /* background-color: black; */
     color: white;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: none;
     top: 0;
 }
 .svid{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .main {
@@ -50,10 +68,15 @@ html {
 .nav {
     height: 15vh;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     gap: 70vh;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* background-color:orange; */
 
     z-index: 99999;
@@ -74,9 +97,15 @@ html {
     height: 10vh;
     /* background-color: green; */
     font-family: anant;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 3vw;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -84,9 +113,14 @@ html {
 
 .nav-left {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     /* background-color: salmon; */
 
 }
@@ -109,8 +143,11 @@ h4>a {
 /* home page ka animation yaha se  */
 
 .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     position: relative;
     /* background-color: aqua; */
 
@@ -119,10 +156,16 @@ h4>a {
 .section {
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-shrink: 0;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 2px soid white;
 }
 
@@ -136,10 +179,19 @@ h4>a {
     /* background-color: red; */
     width: 40%;
     height: 66%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 4vw;
     font-family: anant;
     color: white;
@@ -159,7 +211,8 @@ h4>a {
 .no img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .no1 {
@@ -184,8 +237,12 @@ h4>a {
 }
 
 .section1 .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 60%;
     /* background-color: greenyellow; */
 }
@@ -200,9 +257,15 @@ h4>a {
     width: 100vw;
     height: 100vh;
     background-color: rgb(126, 162, 167);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-user-select: none;
     position: relative;
     /* display: none; */
@@ -222,7 +285,8 @@ h4>a {
 .svid>video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .op{
     opacity: 1;
@@ -241,7 +305,8 @@ h4>a {
 .vid>video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 
@@ -305,9 +370,15 @@ h4>a {
     width: 100%;
     height: 100%;
     background-color: #7EA2A7;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 12vh;
     font-family: anant;
     position: relative;
@@ -364,10 +435,19 @@ h4>a {
     width: 50%;
     height: 50%;
     /* background-color: aqua; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .me-1-image {
@@ -381,7 +461,8 @@ h4>a {
 .me-1-image>img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .me-1-name {
@@ -413,7 +494,8 @@ h4>a {
 .link a img {
     width: 2vw;
     height: 2.5vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .link .insta {
@@ -426,13 +508,24 @@ h4>a {
     width: 50%;
     height: 50%;
     background-color: bisque;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 182, 193)), to(rgb(255, 182, 193)));
+    background: -o-linear-gradient(bottom, rgb(255, 182, 193), rgb(255, 182, 193));
     background: linear-gradient(to top, rgb(255, 182, 193), rgb(255, 182, 193));
     width: 100vw;
     height: 100vh;
@@ -443,6 +536,8 @@ h4>a {
     width: 100vw;
     height: 94vh;
     /* background-color: rgb(237, 203, 203); */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -450,9 +545,16 @@ h4>a {
     width: 50%;
     height: 100%;
     /* background-color: blue; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 4vh;
 }
 
@@ -461,7 +563,11 @@ h4>a {
     height: 50%;
     /* background-color: red; */
     text-align: start;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: anant;
 }
@@ -481,13 +587,15 @@ h4>a {
     width: 34vw;
     height: 37vh;
     /* background-color: yellow; */
-    box-shadow: 1px 1px 8px 4px black;
+    -webkit-box-shadow: 1px 1px 8px 4px black;
+            box-shadow: 1px 1px 8px 4px black;
 }
 
 .video>video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .foot-b-2 {
@@ -501,10 +609,19 @@ h4>a {
     height: 6vh;
     background-color: transparent;
     font-size: 1vw;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 4vh;
 }
 
@@ -514,8 +631,16 @@ h4>a {
     width: 100%;
     height: 40%;
 
-    align-items: end;
-    justify-content: start;
+    -webkit-box-align: end;
+
+        -ms-flex-align: end;
+
+            align-items: end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 
@@ -532,10 +657,16 @@ h4>a {
     /* background-color: rgb(78, 203, 6); */
     border-bottom: 1px solid white;
     letter-spacing: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 }
 .mail{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -550,7 +681,9 @@ h4>a {
     color: white;
     width: 25%;
     height: 100%;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     /* background-color: green; */
 }
 .two{
